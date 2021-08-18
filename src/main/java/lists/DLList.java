@@ -1,3 +1,5 @@
+package lists;
+
 public class DLList {
     private IntNode sentinel;
     private int size;

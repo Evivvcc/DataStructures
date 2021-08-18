@@ -1,6 +1,6 @@
+package lists;
 
-
-/** A SLList with a sentinel node has at least the following invariants:
+/** A lists.SLList with a sentinel node has at least the following invariants:
  *  The sentinel reference always point to a sentinel node
  *  The front item (if it exists) is always at sentinel.next.item
  *  The size variable is always the total number of items that have been added
