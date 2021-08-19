@@ -23,6 +23,7 @@ public class Sort {
     public static void findSmallest(String[] x){
         findSmallest(x, 0);
     }
+
     public static int findSmallest(String[] x,int start){
         int smallestIndex = start;
         for (int i = start; i < x.length; i++) {

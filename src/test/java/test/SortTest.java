@@ -1,12 +1,15 @@
 package test;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class SortTest {
     /**
      * Test the Sort.sort method
      */
-    public static void sortTest() {
+    @Test
+    public void sortTest() {
         String[] input = {"i", "have", "an", "egg"};
         String[] expected = {"an", "egg", "have", "i"};
 
@@ -22,7 +25,8 @@ public class SortTest {
     /**
      * Test the Sort.findSmallest method
      */
-    public static void findSmallestTest() {
+    @Test
+    public void findSmallestTest() {
         String[] input = {"i", "have", "an", "egg"};
         int expected = 2;
 
@@ -34,7 +38,8 @@ public class SortTest {
     /**
      * Test the swap method
      */
-    public static void swapTest() {
+    @Test
+    public void swapTest() {
         String[] input = {"i", "have", "an", "egg"};
         Sort.swap(input, 0, 3);
         for (int i = 0; i < input.length; i++) {
@@ -42,10 +47,4 @@ public class SortTest {
         }
     }
 
-    public static void main(String[] args) {
-////        sortTest();
-//        findSmallestTest();
-//        swapTest();
-        SortTest.sortTest();
-    }
 }
